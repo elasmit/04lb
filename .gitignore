@@ -1,2 +1,15 @@
 build
 .vscode
+bin
+lib
+dist
+cmake-*
+*.obj
+*.a
+*.so
+*.exe
+*.dll
+*.lib
+Debug
+Release
+.vs
