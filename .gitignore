@@ -1,2 +1,8 @@
 build
 .vscode
+bin
+.obj
+.lib
+.o
+.dll
+.a
