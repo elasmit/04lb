@@ -1,6 +1,7 @@
 build
 .vscode
 bin
+template
 lib
 dist
 cmake-*

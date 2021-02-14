@@ -1,16 +1,13 @@
-# Дмитришин Максим
+# Dmytryshyn Maksim
 
 
-## Варіант 4
+## 4th variant
 
 
-### Завдання
+### List of rpojects
 
-
-![task](docs/images/task.png)
-
-
-### Результат
-
-
-![res](docs/images/res.png)
+- [1st lab](projects/l01/readme.md)
+- [2nd lab](projects/l02/readme.md)
+- [3rd lab](projects/l03/readme.md)
+- [4th lab](projects/l04/readme.md)
+- [5th lab](projects/l05/readme.md)
