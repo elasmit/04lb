@@ -1,3 +1,3 @@
 project("l01")
 
-add_executable("l01.o" "main.cpp")
+add_executable("01.o" "main.cpp")

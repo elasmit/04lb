@@ -7,7 +7,7 @@
 ### Task
 
 
-![task]()
+* Usage of `sizeof()` operator
 
 
 ### Result
