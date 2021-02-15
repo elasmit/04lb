@@ -5,6 +5,7 @@ template
 lib
 dist
 cmake-*
+obj
 *.obj
 *.a
 *.so
