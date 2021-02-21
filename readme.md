@@ -11,4 +11,4 @@
 - [3rd lab](projects/l03/readme.md)
 - [4th lab](projects/l04/readme.md)
 - [5th lab](projects/l05/readme.md)
-- [5th lab](projects/l06/readme.md)
+- [6th lab](projects/l06/readme.md)
