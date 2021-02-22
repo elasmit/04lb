@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
     std::cout << "int 10 array => " << sizeof(arr) << "\n";
 
     test kek;
-    std::cout << "struct.int  => " << sizeof(kek.a*4) << "\n";
+    std::cout << "struct.int  => " << sizeof(kek.a)*4 << "\n";
     std::cout << "struct.double  => " << sizeof(kek.ans) << "\n";
     std::cout << "struct.char  => " << sizeof(kek.key) << "\n";
     std::cout << "struct  => " << sizeof(kek) << "\n";
