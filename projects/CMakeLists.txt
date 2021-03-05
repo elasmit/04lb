@@ -1,6 +1,13 @@
+if (LINUX)
+ list(APPEND COMMON_DEPS m)
+endif()
+list(APPEND COMMON_DEPS common_math)
+list(APPEND COMMON_DEPS array_common)
+
 add_subdirectory("l01")
 add_subdirectory("l02")
 add_subdirectory("l03")
 add_subdirectory("l04")
 add_subdirectory("l05")
 add_subdirectory("l06")
+add_subdirectory("l07")

@@ -1,7 +1,5 @@
 project(common_math)
 
-# Unit tests
-
 file(GLOB SRC src/*.cpp src/*.cxx)
 
 add_library(${PROJECT_NAME} ${SRC})

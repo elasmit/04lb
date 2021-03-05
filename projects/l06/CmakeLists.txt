@@ -1,3 +1,0 @@
-project("l06")
-
-add_executable(l06 "main.cpp")
