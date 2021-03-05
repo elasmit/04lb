@@ -66,4 +66,5 @@ int main(int argc, char *argv[])
     std::cout << "p1 to int: " << a << "\n";
     std::bitset<4> b = static_cast<std::bitset<4>>(3);
     std::cout << "'3' to bits: " << b << "\n";
-}
+
+}   

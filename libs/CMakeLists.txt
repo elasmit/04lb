@@ -4,3 +4,4 @@ if (LINUX)
 endif()
 
 add_subdirectory(common_math)
+add_subdirectory(array_common)

@@ -1,4 +1,4 @@
-project(common_math)
+project(array_common)
 
 file(GLOB SRC src/*.cpp src/*.cxx)
 
