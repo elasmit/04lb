@@ -17,6 +17,14 @@ namespace arrays
     void print(const std::vector<std::pair<T1, T2>>& in);
 
     void print(const std::vector<std::pair<double, double>>& in);
+
+    template <class T>
+    T sum(const std::vector<T>& in);
+
+    int sum(const std::vector<int>& in);
+    double sum(const std::vector<double>& in);
+    float sum(const std::vector<float>& in);
+
 }
 
 #endif
