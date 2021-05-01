@@ -13,4 +13,5 @@
 - [5th lab](projects/l05/readme.md)
 - [6th lab](projects/l06/readme.md)
 - [7th lab](projects/l07/readme.md)
+- [7th lab](projects/l08/readme.md)
 - [Google tests](docs/GoogleTests.md)
