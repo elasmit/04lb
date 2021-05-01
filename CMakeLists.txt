@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.10.2)
-set(CXX_STANDARD_REQUIRED 11)
 
 project("04lb")
 
