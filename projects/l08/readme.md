@@ -7,10 +7,10 @@
 ### Task
 
 
-![task]()
+* Strings
 
 
 ### Result
 
 
-![res]()
+![res](../../docs/images/l08/res.png)
