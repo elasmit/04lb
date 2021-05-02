@@ -17,4 +17,5 @@
 - [9th lab](projects/l09/readme.md)
 - [10th lab](projects/l10/readme.md)
 - [11th lab](projects/l11/readme.md)
+- [12th lab](projects/l12/readme.md)
 - [Google tests](docs/GoogleTests.md)
