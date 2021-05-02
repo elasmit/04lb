@@ -12,3 +12,10 @@ TEST(GCommonTestSuite, SumOfArray)
     EXPECT_DOUBLE_EQ(arrays::sum(input3), 10.3);
 
 }
+
+
+TEST(GCommonTestSuite, ArrayToString)
+{
+    std::vector<int> input1{2, 3, 5};
+    EXPECT_EQ(arrays::to_str(input1), "[2, 3, 5]");
+}
