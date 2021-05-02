@@ -29,6 +29,7 @@ namespace arrays
         }
     }
 
+
     template <typename T>
     void sort_rule(std::vector<T> &v, std::function<bool(T &e1, T &e2)> func) // sorting function requires vector and lambda function that returns bool type as parameters
     {
@@ -55,6 +56,7 @@ namespace arrays
 
         std::cout << result << std::endl;
     }
+
 
     template <typename T1, typename T2>
     void print(const std::vector<std::pair<T1, T2>> &v) // override prints 1d vector
