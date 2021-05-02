@@ -21,7 +21,7 @@ template<class T>
             std::cout << in[i] << std::endl;
     }
 
-template<class T1, class T2>
+template<typename T1, typename T2>
     void print(const std::vector<std::pair<T1, T2>>& in)
     {
         for (int i = 0; i < in.size(); i++)
@@ -33,8 +33,6 @@ template<class T1, class T2>
         std::cout << std::endl;
     }
 
-    void print(const std::vector<std::pair<double, double>>& in);
-
 template <class T>
     T sum(const std::vector<T>& in)
     {
@@ -44,11 +42,6 @@ template <class T>
 
         return sum;
     }
-
-    int sum(const std::vector<int>& in);
-    double sum(const std::vector<double>& in);
-    float sum(const std::vector<float>& in);
-
 }
 
 #endif
