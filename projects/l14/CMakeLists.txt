@@ -1,4 +1,4 @@
-project("template")
+project("l14")
 
 file(GLOB SRC src/*.cpp src/*.cxx *.cxx *.cpp)
 
