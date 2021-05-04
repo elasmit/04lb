@@ -85,6 +85,7 @@ namespace arrays
             result.append("]\n");
         }
         result.erase(result.end());
+
         result.append("]");
 
         std::cout << result << std::endl;
@@ -124,6 +125,7 @@ namespace arrays
         return result;
     }
 
+
     template <typename T>
     T sum(const std::vector<T> &v) // override sums 1d vector
     {
@@ -148,4 +150,5 @@ namespace arrays
     }
 
 }
+
 #endif
