@@ -16,4 +16,4 @@
 ### Result
 
 
-![res](../../docs/images/l13/res2.png)
+![res](../../docs/images/l13/res.png)
