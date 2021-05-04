@@ -7,7 +7,7 @@
 ### Task
 
 
-![task]()
+* Make classes that will describe depatrament
 
 
 ### Result
