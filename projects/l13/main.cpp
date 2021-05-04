@@ -49,4 +49,8 @@ int main(int argc, char *argv[]){
     std::cout << "Does point belong to shape using call operator:" << std::endl;
     std::cout << "point(1, 2, 3) " << (sh2(1, 2, 3) ? ("belongs ") : ("doesn't belong ")) << "to shape" << std::endl;
 
+    ag::point<double> p3;
+    std::cout << "Cin in point (takes x, y, z):" << std::endl;
+    std::cin >> p3;
+    std::cout << p3 << std::endl;
 }

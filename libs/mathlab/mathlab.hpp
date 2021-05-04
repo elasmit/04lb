@@ -189,6 +189,13 @@ namespace ag
         friend std::ostream &operator<<(std::ostream &os, const point<long> &v);
         friend std::ostream &operator<<(std::ostream &os, const point<long long> &v);
         friend std::ostream &operator<<(std::ostream &os, const point<long double> &v);
+
+        friend std::istream &operator>>(std::istream &os, point<int> &v);
+        friend std::istream &operator>>(std::istream &os, point<double> &v);
+        friend std::istream &operator>>(std::istream &os, point<float> &v);
+        friend std::istream &operator>>(std::istream &os, point<long> &v);
+        friend std::istream &operator>>(std::istream &os, point<long long> &v);
+        friend std::istream &operator>>(std::istream &os, point<long double> &v);
     };
 
     template <typename T>
@@ -264,6 +271,37 @@ namespace ag
     std::ostream &operator<<(std::ostream &os, const point<long double> &v)
     {
         os << "point(" << v.getX() << ", " << v.getY() << ", " << v.getZ() << ")";
+        return os;
+    }
+
+    std::istream &operator>>(std::istream &os, point<long double> &v)
+    {
+        os >> v.x >> v.y >> v.z;
+        return os;
+    }
+    std::istream &operator>>(std::istream &os, point<double> &v)
+    {
+        os >> v.x >> v.y >> v.z;
+        return os;
+    }
+    std::istream &operator>>(std::istream &os, point<float> &v)
+    {
+        os >> v.x >> v.y >> v.z;
+        return os;
+    }
+    std::istream &operator>>(std::istream &os, point<long> &v)
+    {
+        os >> v.x >> v.y >> v.z;
+        return os;
+    }
+    std::istream &operator>>(std::istream &os, point<long long> &v)
+    {
+        os >> v.x >> v.y >> v.z;
+        return os;
+    }
+    std::istream &operator>>(std::istream &os, point<int> &v)
+    {
+        os >> v.x >> v.y >> v.z;
         return os;
     }
 
