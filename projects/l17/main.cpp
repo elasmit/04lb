@@ -47,7 +47,7 @@ class student : public person
 {
 public:
     int64_t specialty;
-    std::map<subject, unsigned short int> grades;
+    std::map<std::string, unsigned short int> grades;
 
     student(){}
     ~student() override {}
@@ -55,8 +55,8 @@ public:
     const int64_t& getSpeciaty() {return this->specialty;}
     void setSpeciaty(const int64_t& nm) {this->specialty = nm;}
     
-    void setGrade(subject nm, unsigned short int gr) { this->grades[nm] = gr; }
-    auto getGrade(subject nm, unsigned short int gr) { return this->grades[nm]; }
+    void setGrade(std::string nm, unsigned short int gr) { this->grades[nm] = gr; }
+    auto getGrade(std::string nm) { return this->grades[nm]; }
 };
 
 class teacher : public person
