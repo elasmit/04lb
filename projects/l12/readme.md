@@ -11,7 +11,6 @@
 * Creation of template funstions (lab 20)
 
 
-
 ### Result
 
 
