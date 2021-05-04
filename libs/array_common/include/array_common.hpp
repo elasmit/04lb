@@ -1,54 +1,151 @@
 #include <iostream>
 #include <vector>
 #include <utility>
+#include <functional>
 
 #ifndef ARRAY_COMMON_U
 #define ARRAY_COMMON_U
 
 namespace arrays
-{   
-template<class T>
-    void print(const T& in, int size)
+{
+    template <typename T>
+    void swap(T &e1, T &e2) // xor swap
     {
-        for (int i = 0; i < size; i++)
-            std::cout << in[i] << std::endl;
+        e1 ^= e2;
+        e2 ^= e1;
+        e1 ^= e2;
     }
 
-template<class T>
-    void print(const std::vector<T>& in)
+    template <typename T>
+    void sort_rule(std::vector<T> &v, bool (*func)(T &e1, T &e2)) // sorting function requires vector and function that returns bool type as parameters
     {
-        for (int i = 0; i < in.size(); i++)
-            std::cout << in[i] << std::endl;
+        for (int i = 0; i < v.size(); i++)
+        {
+            for (int j = 0; j < v.size(); j++)
+            {
+                if (!func(v[i], v[j]) and !(i == j))
+                    swap((v[i]), (v[j]));
+            }
+        }
     }
 
-template<class T1, class T2>
-    void print(const std::vector<std::pair<T1, T2>>& in)
+    template <typename T>
+    void sort_rule(std::vector<T> &v, std::function<bool(T &e1, T &e2)> func) // sorting function requires vector and lambda function that returns bool type as parameters
     {
-        for (int i = 0; i < in.size(); i++)
-            std::cout << ceil(in[i].first*100)/100 << "\t";
-        std::cout << std::endl;
-
-        for (int i = 0; i < in.size(); i++)
-            std::cout << ceil(in[i].second*100)/100 << "\t";
-        std::cout << std::endl;
+        for (int i = 0; i < v.size(); i++)
+        {
+            for (int j = 0; j < v.size(); j++)
+            {
+                if (!func(v[i], v[j]) and !(i == j))
+                    swap((v[i]), (v[j]));
+            }
+        }
     }
 
-    void print(const std::vector<std::pair<double, double>>& in);
-
-template <class T>
-    T sum(const std::vector<T>& in)
+    template <typename T>
+    void print(const std::vector<T> &v) // override prints 1d vector
     {
-        T sum = 0;
-        for (int i = 0; i < in.size(); i++)
-            sum += in[i];
+        std::string result = "[";
+        for (auto i : v)
+        {
+            result += std::to_string(i) + ", ";
+        }
+        result.erase(result.size() - 2, 2);
+        result.append("]");
 
-        return sum;
+        std::cout << result << std::endl;
     }
 
-    int sum(const std::vector<int>& in);
-    double sum(const std::vector<double>& in);
-    float sum(const std::vector<float>& in);
+    template <typename T1, typename T2>
+    void print(const std::vector<std::pair<T1, T2>> &v) // override prints 1d vector
+    {
+        std::string result = "[";
+        for (auto i : v)
+        {
+            result += "(" + std::to_string(i.first) + ", " + std::to_string(i.second) + "), ";
+        }
+        result.erase(result.size() - 2, 2);
+        result.append("]");
+
+        std::cout << result << std::endl;
+    }
+
+    template <typename T>
+    void print(const std::vector<std::vector<T>> &v) // override prints 2d vector
+    {
+        std::string result = "[";
+        for (auto i : v)
+        {
+            result += "[";
+            for (auto j : i)
+            {
+                result += std::to_string(j) + ", ";
+            }
+            result.erase(result.size() - 2, 2);
+            result.append("]\n");
+        }
+        result.erase(result.end());
+        result.append("]");
+
+        std::cout << result << std::endl;
+    }
+
+    template <typename T>
+    std::string to_str(const std::vector<T> &v) // override converts to string 1d vector
+    {
+        std::string result = "[";
+        for (auto i : v)
+        {
+            result += std::to_string(i) + ", ";
+        }
+        result.erase(result.size() - 2, 2);
+        result.append("]");
+
+        return result;
+    }
+
+    template <typename T>
+    std::string to_str(const std::vector<std::vector<T>> &v) // override converts to string 2d vector
+    {
+        std::string result = "[";
+        for (auto i : v)
+        {
+            result += "[";
+            for (auto j : i)
+            {
+                result += std::to_string(j) + ", ";
+            }
+            result.erase(result.size() - 2, 2);
+            result.append("]\n");
+        }
+        result.erase(result.size() - 1);
+        result.append("]");
+
+        return result;
+    }
+
+    template <typename T>
+    T sum(const std::vector<T> &v) // override sums 1d vector
+    {
+        T result = 0;
+        for (auto i : v)
+            result += i;
+
+        return result;
+    }
+
+    template <typename T>
+    T sum(const std::vector<std::vector<T>> &v) // override sums 2d vector
+    {
+        T result = 0;
+        for (auto i : v)
+        {
+            for (auto j : i)
+                result += j;
+        }
+
+        return result;
+    }
 
 }
-
 #endif

@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
     }
     else
     {
+        // convertion from string to double
         a = std::atof(argv[1]);
         b = std::atof(argv[2]); 
         h = std::atof(argv[3]);
@@ -27,7 +28,7 @@ int main(int argc, char *argv[])
 
     calculator calc(a, b, h, isc);
 
-    auto res = calc();
+    auto res = calc(); // using operator()() override
 
     std::cout << "X:"
               << "\t:\t"
