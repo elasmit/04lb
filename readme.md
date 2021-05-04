@@ -19,6 +19,7 @@
 - [11th lab](projects/l11/readme.md)
 - [12th lab](projects/l12/readme.md)
 - [13th lab](projects/l13/readme.md)
+- [14th lab](projects/l14/readme.md)
 - [15th lab](projects/l13/readme.md)
 - [16th lab](projects/l13/readme.md)
 - [20th lab](projects/l12/readme.md)

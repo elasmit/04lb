@@ -7,10 +7,10 @@
 ### Task
 
 
-![task]()
+* Code timing
 
 
 ### Result
 
 
-![res]()
+![res](../../docs/images/l14/res.png)
