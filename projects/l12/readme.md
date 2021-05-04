@@ -7,7 +7,8 @@
 ### Task
 
 
-* Processing dynamic arrays of objects with lambda-functions 
+* Processing dynamic arrays of objects with lambda-functions (lab 12)
+* Creation of template funstions (lab 20)
 
 
 ### Result
