@@ -3,6 +3,7 @@
 #include <vector>
 #include <functional>
 #include <cmath>
+#include <exception>
 
 #ifndef TEMPLATES
 #define TEMPLATES
@@ -61,6 +62,12 @@ namespace ag
         vector<T> &operator*(const T &v) { return vector<T>(this->x * v, this->y * v, this->z * v); }
 
         T operator*(const vector<T> &v) { return this->x * v.x + this->y * v.y + this->z * v.z; }
+
+        T& operator[](int i){if (i == 0) return this->x;
+                            else if (i == 1) return this->y;
+                            else if (i == 2) return this->z;
+                            else throw std::out_of_range("Out of range");
+                            }
 
         friend std::ostream &operator<<(std::ostream &os, const vector<int> &v);
         friend std::ostream &operator<<(std::ostream &os, const vector<double> &v);

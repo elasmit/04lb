@@ -8,6 +8,9 @@ int main(int argc, char *argv[]){
     std::cout << "Printing custom class vectors:" << std::endl;
     std::cout << vec1 << " " << vec2 << std::endl;
     
+    std::cout << "Acces to coordinates with operator[]:" << std::endl;
+    std::cout << vec1[1] << std::endl;
+    
     std::cout << "Adding and substracting custom class vectors:" << std::endl;
     std::cout << vec1 + vec2 << std::endl;
     std::cout << vec1 - vec2 << std::endl;
