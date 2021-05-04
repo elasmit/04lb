@@ -52,6 +52,20 @@ namespace arrays
         }
         result.erase(result.size() - 2, 2);
         result.append("]");
+        std::cout << result << std::endl;
+    }
+
+    template <typename T1, typename T2>
+    void print(const std::vector<std::pair<T1, T2>> &v) // override prints 1d vector
+    {
+        std::string result = "[";
+        for (auto i : v)
+        {
+            result += "(" + std::to_string(i.first) + ", " + std::to_string(i.second) + "), ";
+        }
+        result.erase(result.size() - 2, 2);
+        result.append("]");
+
 
         std::cout << result << std::endl;
     }
@@ -96,6 +110,7 @@ namespace arrays
         std::string result = "[";
         for (auto i : v)
         {
+
             result += std::to_string(i) + ", ";
         }
         result.erase(result.size() - 2, 2);
