@@ -1,5 +1,6 @@
 include(CTest)
 
+if("${CMAKE_SYSTEM}" MATCHES "Windows")
 # Unit tests
 enable_testing()
 
@@ -20,3 +21,4 @@ list(APPEND GTEST_COMMON_LIBS gtest gtest_main)
 ###### Add test sub-projects ######
 
 add_subdirectory(gtests)
+endif()

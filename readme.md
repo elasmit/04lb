@@ -4,7 +4,7 @@
 ## 4th variant
 
 
-### List of rpojects
+### List of projects
 
 - [1st lab](projects/l01/readme.md)
 - [2nd lab](projects/l02/readme.md)

@@ -56,7 +56,8 @@ public:
     void setSpeciaty(const int64_t& nm) {this->specialty = nm;}
     
     void setGrade(std::string nm, unsigned short int gr) { this->grades[nm] = gr; }
-    auto getGrade(std::string nm, unsigned short int gr) { return this->grades[nm]; }
+    auto getGrade(std::string nm) { return this->grades[nm]; }
+
 };
 
 class teacher : public person
