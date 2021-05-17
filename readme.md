@@ -23,6 +23,8 @@
 - [15th lab](projects/l13/readme.md)
 - [16th lab](projects/l13/readme.md)
 - [17th lab](projects/l17/readme.md)
+- [17th lab](projects/l18/readme.md)
+- [17th lab](projects/l19/readme.md)
 - [20th lab](projects/l12/readme.md)
 - [21th lab](projects/l13/readme.md)
 - [Google tests](docs/GoogleTests.md)
