@@ -13,7 +13,6 @@ TEST(GCommonTestSuite, SumOfArray)
 
 }
 
-
 TEST(GCommonTestSuite, ArrayToString)
 {
     std::vector<int> input1{2, 3, 5};

@@ -57,6 +57,7 @@ public:
     
     void setGrade(std::string nm, unsigned short int gr) { this->grades[nm] = gr; }
     auto getGrade(std::string nm) { return this->grades[nm]; }
+
 };
 
 class teacher : public person
@@ -85,8 +86,16 @@ public:
     const person& getDean() {return this->dean;}
     void setDean(const person& nm) {this->dean = nm;}
 
-    void addSpec(const int64_t nm) {this->specialties.push_back(nm); }
+    void addSpec(const int64_t& nm) {this->specialties.push_back(nm); }
     void popSpec() {return this->specialties.pop_back(); }
+    void delSpec(const int64_t& nm) {for (int i = 0; i < this->specialties.size(); i++)
+    {
+        if ((this->specialties[i]) == nm)
+        {
+            this->specialties.erase(this->specialties.begin()+i);
+            return;
+        }
+    }}
 };
 
 int main(int argc, char *argv[]){

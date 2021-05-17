@@ -147,5 +147,59 @@ namespace arrays
         return result;
     }
 
+    template <typename T>
+    T max(const std::vector<T>& v)
+    {
+        T mx = v[0];
+        for (auto i : v){
+            if (mx < i) mx = i;
+        }
+
+        return mx;
+    }
+
+    template <typename T>
+    T min(const std::vector<T>& v)
+    {
+        T mx = v[0];
+        for (auto i : v){
+            if (mx > i) mx = i;
+        }
+
+        return mx;
+    }
+
+    template <typename T>
+    T max(const std::vector<std::vector<T>>& v)
+    {
+        T mx = v[0][0];
+        for (auto i : v)
+        {
+            for (auto j : i)
+            {
+                if (mx < j) mx = j;
+            }
+        }
+
+        return mx;
+    }
+
+    template <typename T>
+    T min(const std::vector<std::vector<T>>& v)
+    {
+        T mx = v[0][0];
+        for (auto i : v)
+        {
+            for (auto j : i)
+            {
+                if (mx > j) mx = j;
+            }
+        }
+
+        return mx;
+    }
+
+    
+
 }
 #endif

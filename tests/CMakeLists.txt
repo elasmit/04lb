@@ -22,5 +22,3 @@ list(APPEND GTEST_COMMON_LIBS gtest gtest_main)
 
 add_subdirectory(gtests)
 endif()
-
-
