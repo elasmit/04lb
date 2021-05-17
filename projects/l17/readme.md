@@ -8,9 +8,3 @@
 
 
 * Make classes that will describe depatrament
-
-
-### Result
-
-
-![res]()
